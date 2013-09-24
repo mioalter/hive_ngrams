@@ -37,8 +37,7 @@ LIMIT 100;
 CREATE TABLE grams_new(
 gram char(255) not null,
 decade int not null,
-ratio float not null,
-increase float
+ratio float not null
 ) Engine=MyISAM;
 
 LOAD DATA LOCAL INFILE '/Users/mioalter/Documents/Hadoop_data/decades_new_words' INTO TABLE grams_new;
